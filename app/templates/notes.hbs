@@ -1,0 +1,20 @@
+<div style="display: inline-block; height: 500px; width: 200px; border-right: 1px solid pink; vertical-align: top;">
+  {{#if persistedNotes.length}}
+    <ul>
+      {{#each persistedNotes as |note|}}
+        <li>
+          {{link-to note.title "notes.note" note}}
+          ({{if note.hasDirtyAttributes "Dirty" "Clean"}})
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    No notes.
+  {{/if}}
+
+  {{link-to "New Note" "notes.new"}}
+</div>
+
+<div style="display: inline-block; width: 400px;">
+  {{outlet}}
+</div>

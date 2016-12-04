@@ -1,0 +1,6 @@
+{{#if model.length}}
+  <h3>Welcome back!</h3>
+{{else}}
+  <h3>Welcome!</h3>
+  {{link-to "Create your first note." "notes.new"}}
+{{/if}}

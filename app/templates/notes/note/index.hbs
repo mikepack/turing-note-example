@@ -1,0 +1,11 @@
+<h3>Note Details</h3>
+
+{{model.createdAt}}<br><br>
+
+{{model.title}}<br><br>
+
+{{model.description}}<br><br>
+
+{{link-to "Edit" "notes.note.edit" model}}<br><br>
+
+<button {{action "deleteNote" model}}>Delete</button>

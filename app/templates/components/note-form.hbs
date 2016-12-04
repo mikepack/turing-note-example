@@ -1,0 +1,14 @@
+<form {{action "saveNote" model on="submit"}}>
+  <label>Title</label>
+  {{input value=model.title}}
+
+  <br><br>
+
+  <label>Description</label>
+  {{input value=model.description}}
+
+  <br><br>
+
+  <button>{{submitText}}</button>
+</form>
+
